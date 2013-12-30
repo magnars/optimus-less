@@ -1,4 +1,4 @@
-# optimus-less
+# optimus-less [![Build Status](https://secure.travis-ci.org/magnars/optimus-less.png)](http://travis-ci.org/magnars/optimus-less)
 
 A [LESS](http://lesscss.org/) asset loader for [Optimus](http://github.com/magnars/optimus).
 
