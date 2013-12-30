@@ -31,10 +31,10 @@ everything works like before, but now it also supports LESS files. Score!
   ```
 
 - The less transpiler is fast. That doesn't mean you should be
-  compiling the entirety of
-  [Bootstrap.less](http://getbootstrap.com/). That takes about 350 ms,
-  and will make your development environment sluggish. Use precompiled
-  CSS sources for Bootstrap, and use optimus-less for your own files.
+  compiling the entirety of [Bootstrap.less](http://getbootstrap.com/)
+  with it. It'll take about 350 ms, and make your development
+  environment sluggish. Use precompiled CSS sources for Bootstrap, and
+  use optimus-less for your own files.
 
 ## Contribute
 
@@ -47,8 +47,8 @@ If you're looking to add other transpilers, I think that would be best
 in a separate project. But please do let me know about it, so I can
 link to it in the Optimus README. :-)
 
-Remember add tests for your feature or fix, or I'll certainly break it
-later.
+Remember to add tests for your feature or fix, or I'll certainly break
+it later.
 
 #### Running the tests
 
