@@ -4,8 +4,8 @@ A [LESS](http://lesscss.org/) asset loader for [Optimus](http://github.com/magna
 
 ## Install
 
-Add `[optimus-less "0.1.0"]` to `:dependencies` in your `project.clj`.
-It also requires Optimus version minimum 0.13.5.
+- Add `[optimus-less "0.1.0"]` to `:dependencies` in your `project.clj`.
+- It requires Optimus version minimum `0.13.5`.
 
 ## Usage
 
@@ -13,20 +13,22 @@ Add `(:require optimus-less.core)` to the namespace declaration where
 you're loading assets.
 
 The `load-less-asset` function will be declared as a custom loader for
-`.less` files with Optimus' `load-asset` multimethod.
+`.less` files with Optimus' `load-asset` multimethod. This is in turn
+used by `load-assets`, `load-bundle` and `load-bundles` - so
+everything works like before, but now it also supports LESS files. Score!
 
 #### Considerations
 
 - The `.less` files are immediately transpiled into `.css` files. This
   means you can safely bundle CSS and LESS files together. It also
-  means that the bundle identifier has to be `.css`:
+  means that the bundle identifier has to be `.css`. Like so:
 
-```cl
-(assets/load-bundle "public"
-                    "styles.css"
-                    ["/styles/reset.less"
-                     "/styles/main.less"])
-```
+  ```cl
+  (assets/load-bundle "public"
+                      "styles.css"
+                      ["/styles/reset.less"
+                       "/styles/main.less"])
+  ```
 
 - The less transpiler is fast. That doesn't mean you should be
   compiling the entirety of
@@ -38,8 +40,8 @@ The `load-less-asset` function will be declared as a custom loader for
 
 Yes, please do.
 
-Maybe you'd like to add some caching so we could even include the raw
-Bootstrap LESS files without a slowdown?
+Maybe you'd like to add some clever caching so we could even include
+the raw Bootstrap LESS files without a slowdown?
 
 If you're looking to add other transpilers, I think that would be best
 in a separate project. But please do let me know about it, so I can
