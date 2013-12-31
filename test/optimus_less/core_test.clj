@@ -1,5 +1,5 @@
 (ns optimus-less.core-test
-  (:require [optimus-less.test-helper :refer [with-files public-dir *last-modified*]]
+  (:require [test-with-files.core :refer [with-files public-dir *last-modified*]]
             [clojure.java.io :as io])
   (:use [optimus-less.core]
         [midje.sweet]))
