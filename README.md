@@ -26,7 +26,7 @@ everything works like before, but now it also supports LESS files. Score!
   ```cl
   (assets/load-bundle "public"
                       "styles.css"
-                      ["/styles/reset.less"
+                      ["/styles/reset.css"
                        "/styles/main.less"])
   ```
 
