@@ -31,8 +31,7 @@
    (load-less-asset public-dir "/main.less") => {:path "/main.css"
                                                  :original-path "/main.less"
                                                  :contents (str "* {\n  margin: 2;\n}\n" source-map-fluff)
-                                                 :last-modified *last-modified*
-                                                 :references #{}}))
+                                                 :last-modified *last-modified*}))
 
 (fact
  "It includes references, rewriting them to absolute paths."
@@ -41,7 +40,7 @@
               ["/theme/img/bg.png" ""]]
    (load-less-asset public-dir "/theme/main.less") => {:path "/theme/main.css"
                                                        :original-path "/theme/main.less"
-                                                       :contents (str "body {\n  background: url('/theme/img/bg.png');\n}\n" source-map-fluff)
+                                                       :contents (str "body {\n  background: url(/theme/img/bg.png);\n}\n" source-map-fluff)
                                                        :last-modified *last-modified*
                                                        :references #{"/theme/img/bg.png"}}))
 
