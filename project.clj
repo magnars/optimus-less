@@ -1,4 +1,4 @@
-(defproject optimus-less "0.1.0"
+(defproject optimus-less "0.2.0"
   :description "LESS asset loader for Optimus."
   :url "http://github.com/magnars/optimus-less"
   :license {:name "Eclipse Public License"

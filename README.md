@@ -4,8 +4,7 @@ A [LESS](http://lesscss.org/) asset loader for [Optimus](http://github.com/magna
 
 ## Install
 
-- Add `[optimus-less "0.1.0"]` to `:dependencies` in your `project.clj`.
-- It requires Optimus version minimum `0.13.5`.
+Add `[optimus-less "0.2.0"]` to `:dependencies` in your `project.clj`.
 
 ## Usage
 
@@ -60,7 +59,7 @@ run again.
 
 ## License
 
-Copyright © 2013 Magnar Sveen
+Copyright © 2014 Magnar Sveen
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
