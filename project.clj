@@ -6,7 +6,7 @@
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [com.github.sommeri/less4j "1.8.0"]
                  [optimus "0.13.5"]]
-  :profiles {:dev {:dependencies [[midje "1.5.0"]
+  :profiles {:dev {:dependencies [[midje "1.6.3"]
                                   [test-with-files "0.1.0"]]
-                   :plugins [[lein-midje "3.0.0"]]
+                   :plugins [[lein-midje "3.1.3"]]
                    :resource-paths ["test/resources"]}})
