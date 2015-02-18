@@ -4,7 +4,7 @@ A [LESS](http://lesscss.org/) asset loader for [Optimus](http://github.com/magna
 
 ## Install
 
-Add `[optimus-less "0.2.0"]` to `:dependencies` in your `project.clj`.
+Add `[optimus-less "0.2.1"]` to `:dependencies` in your `project.clj`.
 
 ## Usage
 
