@@ -19,5 +19,5 @@ before_install:
   - curl "${GRAVIS}.install-jdk-travis.sh" --output ~/.install-jdk-travis.sh
   - source ~/.install-jdk-travis.sh
 lein: lein
-script: lein test
+script: lein midje
 jdk:
